@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header class="app-header">
+            <h1>🌟 My To-Do List 🌟</h1>
+        </header>
+        <section class="input-section">
+            <div class="input-container">
+                <input type="text" id="taskInput" placeholder="Enter your task here...">
+                <select id="taskCategory">
+                    <option value="Work">Work</option>
+                    <option value="Personal">Personal</option>
+                    <option value="Urgent">Urgent</option>
+                </select>
+                <button id="addTaskBtn">Add Task</button>
+            </div>
+        </section>
+        <section class="tasks-section">
+            <h2>Tasks</h2>
+            <ul id="taskList"></ul>
+        </section>
+        <footer class="footer-section">
+            <button id="clearAllBtn" class="clear-btn">Clear All Tasks</button>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
